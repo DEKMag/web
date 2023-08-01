@@ -46,15 +46,9 @@
   height: 20px;
   margin: 10px 5px 10px auto;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
-/* .bar {
-  width: 80%;
-
-  height: 2px;
-  background-color: #f0f0f0;
-  margin: 7px auto;
-} */
 .icon {
   width: 25px;
   height: 25px;
@@ -63,11 +57,14 @@
 .menuItems {
   position: absolute;
   width: 160px;
-  /* height: 100px; */
+
+  opacity: 0;
+
+  transition: opacity 0.2s, max-height 0.2s;
+
   top: 50px;
   right: 0;
-  /* background-color: #f0f0f0;
-  border: 1px solid #ccc; */
+
   padding: 10px 5px 10px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -80,4 +77,8 @@
 
 .menu-item:hover {
   background-color: #ddd;
+}
+
+.menuItemsOpen {
+  opacity: 1;
 }

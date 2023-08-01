@@ -1,13 +1,11 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { useEffect, useState } from "react";
-import MenuTop from "./components/a-top/MenuTop";
-import MenuFooter from "./components/c-footer/MenuFooter";
-import PersonalPage from "./components/b-center/a-personal-page/PersonalPage";
-import Web from "./components/b-center/b-web/Web";
-import Gallery from "./components/b-center/c-gallery/Gallery";
-import News from "./components/b-center/d-news/News";
-// import ContentCenter from "./components/b-center/ContentCenter";
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MenuTop from './components/a-top/MenuTop';
+import MenuFooter from './components/c-footer/MenuFooter';
+import PersonalPage from './components/b-center/a-personal-page/PersonalPage';
+import Web from './components/b-center/b-web/Web';
+import Gallery from './components/b-center/c-gallery/Gallery';
+import News from './components/b-center/d-news/News';
 
 function App() {
   return (
@@ -21,7 +19,6 @@ function App() {
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/News" element={<News />} />
           </Routes>
-          {/* <ContentCenter /> */}
           <MenuFooter />
         </div>
       </div>

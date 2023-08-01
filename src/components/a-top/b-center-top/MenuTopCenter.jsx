@@ -1,43 +1,16 @@
-import "./MenuTopCenter.module.css";
-
-import { GiBookCover, GiPlagueDoctorProfile } from "react-icons/gi";
-import { FaReact } from "react-icons/fa";
-import { TfiGallery } from "react-icons/tfi";
-
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import styles from "./MenuTopCenter.module.css";
+import React, { useState } from 'react';
+import { GiBookCover, GiPlagueDoctorProfile } from 'react-icons/gi';
+import { FaReact } from 'react-icons/fa';
+import { TfiGallery } from 'react-icons/tfi';
+import { NavLink } from 'react-router-dom';
+import styles from './MenuTopCenter.module.css';
 
 const MenuTopCenter = () => {
-  const [isActiveHome, setIsActiveHome] = useState(false);
-  const handleHomeClick = () => {
-    setIsActiveHome((prevState) => !prevState);
-  };
+  const [activeIcon, setActiveIcon] = useState(null);
 
-  const [isActiveWeb, setIsActiveWeb] = useState(false);
-  const handleWebClick = () => {
-    setIsActiveWeb((prevState) => !prevState);
+  const handleIconClick = (iconName) => {
+    setActiveIcon((prevIcon) => (prevIcon === iconName ? null : iconName));
   };
-
-  const [isActiveGallery, setIsActiveGallery] = useState(false);
-  const handleGalleryClick = () => {
-    setIsActiveGallery((prevState) => !prevState);
-  };
-
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
-    setIsActive((prevState) => !prevState);
-  };
-  // useEffect(() => {
-  //   return () => {
-  //     // This function will be called when the component unmounts
-  //     // Reset the isActiveHome state to false when the component is unmounted
-  //     setIsActiveHome(false);
-  //     // setIsActiveWeb(false);
-  //     // setIsActiveGallery(false);
-  //     // setIsActive(false);
-  //   };
-  // }, []);
 
   return (
     <div
@@ -46,53 +19,50 @@ const MenuTopCenter = () => {
       <nav className={styles.navStyles}>
         <div className={styles.navContent}>
           <div className={styles.navCont}>
-            <NavLink
-              style={
-                isActiveHome ? { color: "#E0AF68" } : { color: "antiquewhite" }
-              }
-              to={isActiveHome ? "/" : "/PersonalPage"}
-              onClick={handleHomeClick}
-              // end
-            >
-              <GiPlagueDoctorProfile className={styles.icon} />
+            <NavLink to={activeIcon === 'PlagueDoctor' ? '/' : '/PersonalPage'}>
+              <GiPlagueDoctorProfile
+                className={`${styles.icon} ${
+                  activeIcon === 'PlagueDoctor' ? styles.activeIcon : ''
+                }`}
+                onClick={() => handleIconClick('PlagueDoctor')}
+                title="Animation"
+              />
             </NavLink>
           </div>
 
           <div className={styles.navCont}>
-            <NavLink
-              style={
-                isActiveWeb ? { color: "#E0AF68" } : { color: "antiquewhite" }
-              }
-              to={isActiveWeb ? "/" : "/Web"}
-              onClick={handleWebClick}
-            >
-              <FaReact className={styles.icon} />
+            <NavLink to={activeIcon === 'ReactIcon' ? '/' : '/Web'}>
+              <FaReact
+                className={`${styles.icon} ${
+                  activeIcon === 'ReactIcon' ? styles.activeIcon : ''
+                }`}
+                onClick={() => handleIconClick('ReactIcon')}
+                title="Website portfolio"
+              />
             </NavLink>
           </div>
 
           <div className={styles.navCont}>
-            <NavLink
-              style={
-                isActiveGallery
-                  ? { color: "#E0AF68" }
-                  : { color: "antiquewhite" }
-              }
-              to={isActiveGallery ? "/" : "/Gallery"}
-              onClick={handleGalleryClick}
-            >
-              <TfiGallery className={styles.icon} />
+            <NavLink to={activeIcon === 'GalleryIcon' ? '/' : '/Gallery'}>
+              <TfiGallery
+                className={`${styles.icon} ${
+                  activeIcon === 'GalleryIcon' ? styles.activeIcon : ''
+                }`}
+                onClick={() => handleIconClick('GalleryIcon')}
+                title="Gallery portfolio"
+              />
             </NavLink>
           </div>
 
           <div className={styles.navCont}>
-            <NavLink
-              style={
-                isActive ? { color: "#E0AF68" } : { color: "antiquewhite" }
-              }
-              to={isActive ? "/" : "/News"}
-              onClick={handleClick}
-            >
-              <GiBookCover className={styles.icon} />
+            <NavLink to={activeIcon === 'BookCover' ? '/' : '/News'}>
+              <GiBookCover
+                className={`${styles.icon} ${
+                  activeIcon === 'BookCover' ? styles.activeIcon : ''
+                }`}
+                onClick={() => handleIconClick('BookCover')}
+                title="Gallery portfolio"
+              />
             </NavLink>
           </div>
         </div>

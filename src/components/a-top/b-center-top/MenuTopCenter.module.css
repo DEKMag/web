@@ -34,10 +34,20 @@
   width: 100%;
   height: 40px;
   font-family: arial, sans-serif;
-  /* font-weight: bold; */
+  transition: color 0.2s;
 }
 
 .icon {
   width: 25px;
   height: 25px;
+}
+
+.icon {
+  /* Add your styles for the icons here */
+  color: antiquewhite;
+}
+
+/* Styles for active icons */
+.activeIcon {
+  color: #e0af68;
 }
