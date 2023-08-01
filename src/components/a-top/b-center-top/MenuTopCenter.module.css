@@ -1,0 +1,43 @@
+.menuCenter {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 1020px;
+  height: 40px;
+  margin: 10px;
+  background-color: #24283b;
+  border-radius: 5px;
+}
+
+.shadowMenu {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navStyles {
+  width: 1020px;
+  height: 40px;
+}
+.navContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 40px;
+}
+
+.navCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-family: arial, sans-serif;
+  /* font-weight: bold; */
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}

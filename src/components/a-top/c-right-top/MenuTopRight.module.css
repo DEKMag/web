@@ -1,0 +1,83 @@
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+  height: 60px;
+}
+
+.menu {
+  flex: 1;
+  max-width: 40px;
+  min-height: 40px;
+  margin: 10px;
+  background-color: #24283b;
+  border-radius: 5px;
+}
+
+.shadowMenu {
+  box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  flex: 2;
+  width: 110px;
+  height: 40px;
+  margin: 10px;
+  background-color: #24283b;
+  border-radius: 5px;
+}
+
+.time {
+  text-align: center;
+}
+
+.burger-menu {
+  position: relative;
+}
+
+.toggle {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  margin: 10px 5px 10px auto;
+  cursor: pointer;
+}
+
+/* .bar {
+  width: 80%;
+
+  height: 2px;
+  background-color: #f0f0f0;
+  margin: 7px auto;
+} */
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.menuItems {
+  position: absolute;
+  width: 160px;
+  /* height: 100px; */
+  top: 50px;
+  right: 0;
+  /* background-color: #f0f0f0;
+  border: 1px solid #ccc; */
+  padding: 10px 5px 10px 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.menu-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}

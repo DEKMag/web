@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { useEffect, useState } from "react";
+import MenuTop from "./components/a-top/MenuTop";
+import MenuFooter from "./components/c-footer/MenuFooter";
+import PersonalPage from "./components/b-center/a-personal-page/PersonalPage";
+import Web from "./components/b-center/b-web/Web";
+import Gallery from "./components/b-center/c-gallery/Gallery";
+import News from "./components/b-center/d-news/News";
+// import ContentCenter from "./components/b-center/ContentCenter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <div className="content">
+          <MenuTop />
+          <Routes>
+            <Route path="/PersonalPage" element={<PersonalPage />} />
+            <Route path="/Web" element={<Web />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/News" element={<News />} />
+          </Routes>
+          {/* <ContentCenter /> */}
+          <MenuFooter />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,17 @@
+.logo {
+  width: 100%;
+  height: 815px;
+  border: 1px solid red;
+}
+
+.contentCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #24283b;
+  border-radius: 5px;
+  opacity: 1;
+}

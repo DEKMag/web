@@ -1,0 +1,12 @@
+.navFooter {
+  display: flex;
+  position: fixed;
+  width: 1917px;
+  height: 60px;
+  bottom: 0;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;
+}
