@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { GiBookCover, GiPlagueDoctorProfile } from 'react-icons/gi';
 import { FaReact } from 'react-icons/fa';
 import { TfiGallery } from 'react-icons/tfi';

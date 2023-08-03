@@ -29,5 +29,10 @@
 .icon {
   width: 25px;
   height: 25px;
-  color: aliceblue;
+  color: antiquewhite;
+}
+
+/* Styles for active icons */
+.activeIcon {
+  color: #e0af68;
 }

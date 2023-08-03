@@ -1,4 +1,4 @@
-.left {
+.menuTopLeft {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -36,4 +36,9 @@
 .icon {
   width: 25px;
   height: 25px;
+  color: antiquewhite;
+}
+
+.activeIcon {
+  color: #e0af68;
 }

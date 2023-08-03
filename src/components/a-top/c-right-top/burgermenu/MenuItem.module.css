@@ -32,3 +32,13 @@
   border-radius: 5px;
   background-color: #24283b;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: antiquewhite;
+}

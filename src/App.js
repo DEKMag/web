@@ -6,6 +6,7 @@ import PersonalPage from './components/b-center/a-personal-page/PersonalPage';
 import Web from './components/b-center/b-web/Web';
 import Gallery from './components/b-center/c-gallery/Gallery';
 import News from './components/b-center/d-news/News';
+import Card from './components/a-top/a-left-top/Card';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/Web" element={<Web />} />
             <Route path="/Gallery" element={<Gallery />} />
             <Route path="/News" element={<News />} />
+            <Route path="/Card" element={<Card />} />
           </Routes>
           <MenuFooter />
         </div>
