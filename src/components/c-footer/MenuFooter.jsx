@@ -6,9 +6,10 @@ import MenuRightFooter from './c-right-footer/MenuRightFooter';
 const MenuFooter = () => {
   return (
     <nav className={styles.navFooter}>
-      <MenuLeftFooter />
-
-      <MenuRightFooter />
+      <>
+        <MenuLeftFooter />
+        <MenuRightFooter />
+      </>
     </nav>
   );
 };

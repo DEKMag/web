@@ -1,9 +1,8 @@
-.end {
+.menuFooter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-content: center;
-
   width: 300px;
   height: 60px;
 }

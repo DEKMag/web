@@ -1,7 +1,8 @@
-.end {
+.menuFooter {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-content: center;
   width: 300px;
   height: 60px;
 }
@@ -21,11 +22,16 @@
 }
 
 .shadowMenu {
-  box-shadow: -10px -5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
   width: 25px;
   height: 25px;
-  color: aliceblue;
+  color: antiquewhite;
+}
+
+/* Styles for active icons */
+.activeIcon {
+  color: #e0af68;
 }
