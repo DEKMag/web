@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-top: 750px;
+  /* margin-top: 750px; */
 }
 
 .button {

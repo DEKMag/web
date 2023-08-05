@@ -19,7 +19,9 @@ const MenuRightFooter = () => {
   return (
     <nav className={styles.navStyles}>
       <div className={styles.menuFooter}>
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.OneMenu}vv`}
+        >
           <NavLink to={activeIcon === 'OneYes' ? '/' : '/MenuRightOne'}>
             <GiAbstract053
               className={`${styles.icon} ${
@@ -31,7 +33,9 @@ const MenuRightFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.TwoMenu}`}
+        >
           <NavLink to={activeIcon === 'TwoYes' ? '/' : '/MenuRightTwo'}>
             <GiAbstract050
               className={`${styles.icon} ${
@@ -43,7 +47,9 @@ const MenuRightFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FreeMenu}`}
+        >
           <NavLink to={activeIcon === 'FreeYes' ? '/' : '/MenuRightFree'}>
             <GiAbstract098
               className={`${styles.icon} ${
@@ -55,7 +61,9 @@ const MenuRightFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FourMenu}`}
+        >
           <NavLink to={activeIcon === 'FourYes' ? '/' : '/MenuRightFour'}>
             <GiAbstract078
               className={`${styles.icon} ${
@@ -67,7 +75,9 @@ const MenuRightFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FiveMenu}`}
+        >
           <NavLink to={activeIcon === 'FiveYes' ? '/' : '/MenuRightFive'}>
             <GiAce
               className={`${styles.icon} ${

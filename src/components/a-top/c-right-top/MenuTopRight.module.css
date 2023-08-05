@@ -7,6 +7,11 @@
 }
 
 .menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex: 1;
   max-width: 40px;
   min-height: 40px;
@@ -55,16 +60,13 @@
 }
 
 .menuItems {
+  z-index: 100;
   position: absolute;
   width: 160px;
-
   opacity: 0;
-
   transition: opacity 0.2s, max-height 0.2s;
-
   top: 50px;
   right: 0;
-
   padding: 10px 5px 10px 10px;
   border-radius: 5px;
   margin: 10px;

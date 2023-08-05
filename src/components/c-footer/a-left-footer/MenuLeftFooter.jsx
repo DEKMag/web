@@ -19,7 +19,9 @@ const MenuLeftFooter = () => {
   return (
     <nav className={styles.navStyles}>
       <div className={styles.menuFooter}>
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.OneMenu}`}
+        >
           <NavLink to={activeIcon === 'OneYes' ? '/' : '/MenuLeftOne'}>
             <GiAbstract029
               className={`${styles.icon} ${
@@ -31,7 +33,9 @@ const MenuLeftFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.TwoMenu}`}
+        >
           <NavLink to={activeIcon === 'TwoYes' ? '/' : '/MenuLeftTwo'}>
             <GiAbstract013
               className={`${styles.icon} ${
@@ -43,7 +47,9 @@ const MenuLeftFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FreeMenu}`}
+        >
           <NavLink to={activeIcon === 'FreeYes' ? '/' : '/MenuLeftFree'}>
             <GiAbstract032
               className={`${styles.icon} ${
@@ -55,7 +61,9 @@ const MenuLeftFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FourMenu}`}
+        >
           <NavLink to={activeIcon === 'FourYes' ? '/' : '/MenuLeftFour'}>
             <GiAbstract063
               className={`${styles.icon} ${
@@ -67,7 +75,9 @@ const MenuLeftFooter = () => {
           </NavLink>
         </div>
 
-        <div className={`${styles.menuIcon} ${styles.shadowMenu}`}>
+        <div
+          className={`${styles.menuIcon} ${styles.shadowMenu} ${styles.FiveMenu}`}
+        >
           <NavLink to={activeIcon === 'FiveYes' ? '/' : '/MenuLeftFive'}>
             <GiAbstract089
               className={`${styles.icon} ${

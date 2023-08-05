@@ -18,9 +18,9 @@ const MenuLeftOne = ({ activeIcon }) => {
         <div className={styles.shell}>
           <div className={styles.nameTextContent}>1</div>
           <div className={styles.contentCenter}>
-            <div className={styles.closeIcon} onClick={handleClose}>
+            {/* <div className={styles.closeIcon} onClick={handleClose}>
               <GiAbstract029 />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

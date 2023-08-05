@@ -52,7 +52,6 @@ const Gallery = () => {
               {currentImages.map((image, index) => (
                 <img key={index} src={image} alt={`Image ${index + 1}`} />
               ))}
-              {/* <ImageGallery images={images} imagesPerPage={imagesPerPage} /> */}
             </div>
           </div>
           <div className={styles.bottomPag}>

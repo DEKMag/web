@@ -43,11 +43,38 @@
 }
 
 .icon {
-  /* Add your styles for the icons here */
   color: antiquewhite;
 }
 
-/* Styles for active icons */
 .activeIcon {
   color: #e0af68;
+}
+
+@media screen and (max-width: 1024px) {
+  .menuCenter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    background-color: #24283b;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .menuCenter {
+    display: none;
+    /* display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    background-color: #24283b;
+    border-radius: 5px; */
+  }
 }

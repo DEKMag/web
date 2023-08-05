@@ -35,3 +35,29 @@
 .activeIcon {
   color: #e0af68;
 }
+
+@media screen and (max-width: 390px) {
+  .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 185px;
+    height: 60px;
+  }
+  .OneMenu {
+    display: none;
+  }
+  .TwoMenu {
+    display: none;
+  }
+  /* .FreeMenu {
+    display: none;
+  }
+  .FourMenu {
+    display: none;
+  }
+  .FiveMenu {
+    display: none;
+  } */
+}
