@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Calendar from './Calendare';
 import { TfiLinux } from 'react-icons/tfi';
 import { NavLink } from 'react-router-dom';
-import styles from './MenuTopLeft.module.css';
+import styles from './MenuTopLeft.module.scss';
 
 const MenuTopLeft = () => {
   const [activeIcon, setActiveIcon] = useState(null);

@@ -1,0 +1,164 @@
+@import '../../../style/variable.scss';
+
+.logo {
+  width: 100%;
+  height: 815px;
+}
+
+.shell {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 1510px;
+  height: 830px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: $BorderRadius;
+}
+
+.contentCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1370px;
+  height: 750px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+  background: $BackgroundOpacity;
+}
+.nameTextContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+  right: 30px;
+  width: 1510px;
+  height: 30px;
+  color: antiquewhite;
+}
+
+.imageContent {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: space-around;
+  flex-wrap: nowrap;
+  width: 1370px;
+  height: 750px;
+}
+.imgBlock {
+  margin: 10px;
+  border-radius: $BorderRadius;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 100%;
+    height: 815px;
+  }
+  .shell {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    width: 800px;
+    height: 640px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $BorderRadius;
+  }
+
+  .contentCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 550px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .nameTextContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    right: 30px;
+    width: 800px;
+    height: 30px;
+    color: antiquewhite;
+  }
+
+  .menuContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    width: 50px;
+    height: 550px;
+    right: 0%;
+    background-color: #272d47;
+  }
+
+  .menuCircleOne {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #c0c9eb;
+  }
+
+  .menuCircleTwo {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #c0c9eb;
+  }
+
+  .menuCircleFree {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #c0c9eb;
+  }
+
+  .topBorder {
+    position: absolute;
+    width: 800px;
+    height: 5px;
+    background-color: #272d47;
+  }
+
+  .leftBorder {
+    position: absolute;
+    width: 5px;
+    height: 550px;
+    background-color: #272d47;
+  }
+
+  .bottomBorder {
+    position: absolute;
+    width: 800px;
+    height: 5px;
+    bottom: 0%;
+    background-color: #272d47;
+  }
+}

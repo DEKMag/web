@@ -3,7 +3,7 @@ import { GiBookCover, GiPlagueDoctorProfile } from 'react-icons/gi';
 import { FaReact } from 'react-icons/fa';
 import { TfiGallery } from 'react-icons/tfi';
 import { NavLink } from 'react-router-dom';
-import styles from './MenuTopCenter.module.css';
+import styles from './MenuTopCenter.module.scss';
 
 const MenuTopCenter = () => {
   const [activeIcon, setActiveIcon] = useState(null);

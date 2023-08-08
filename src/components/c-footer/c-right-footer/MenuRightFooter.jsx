@@ -7,7 +7,7 @@ import {
 } from 'react-icons/gi';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
-import styles from './MenuRightFooter.module.css';
+import styles from './MenuRightFooter.module.scss';
 
 const MenuRightFooter = () => {
   const [activeIcon, setActiveIcon] = useState(null);

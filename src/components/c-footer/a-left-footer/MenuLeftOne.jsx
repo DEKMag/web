@@ -1,16 +1,16 @@
 import { useState } from 'react';
-import { GiAbstract029 } from 'react-icons/gi';
-import styles from './MenuLeftOne.module.css';
+import RangeSlider from './details/Range';
+import styles from './MenuLeftOne.module.scss';
 
-const MenuLeftOne = ({ activeIcon }) => {
+const MenuLeftOne = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   const handleClose = () => {
     setIsOpen(false);
   };
-
+  // Если isOpen === false, компонент не будет отрисовываться
   if (!isOpen) {
-    return null; // Если isOpen === false, компонент не будет отрисовываться
+    return null;
   }
   return (
     <>
@@ -18,9 +18,9 @@ const MenuLeftOne = ({ activeIcon }) => {
         <div className={styles.shell}>
           <div className={styles.nameTextContent}>1</div>
           <div className={styles.contentCenter}>
-            {/* <div className={styles.closeIcon} onClick={handleClose}>
-              <GiAbstract029 />
-            </div> */}
+            <div className={styles.inputRange}>
+              <RangeSlider />
+            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import styles from './Pagination.module.css';
+import styles from './Pagination.module.scss';
 
 const Pagination = ({ currentPage, totalPages, onChangePage }) => {
   const pageNumbers = Array.from(

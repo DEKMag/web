@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MenuTop from './components/a-top/MenuTop';
 import MenuFooter from './components/c-footer/MenuFooter';
@@ -17,7 +18,11 @@ import MenuRightTwo from './components/c-footer/c-right-footer/MenuRightTwo';
 import MenuRightFree from './components/c-footer/c-right-footer/MenuRightFree';
 import MenuRightFour from './components/c-footer/c-right-footer/MenuRightFour';
 import MenuRightFive from './components/c-footer/c-right-footer/MenuRightFive';
-
+// import DefinitionsList from './components/sd';
+// const definitions = [
+//   { dt: 'one', dd: 'two', id: 1 },
+//   { dt: 'another term', dd: 'another description', id: 2 },
+// ];
 function App() {
   return (
     <BrowserRouter>
@@ -44,6 +49,7 @@ function App() {
             <Route path="/MenuRightFive" element={<MenuRightFive />} />
           </Routes>
           <MenuFooter />
+          {/* <DefinitionsList data={definitions} /> */}
         </div>
       </div>
     </BrowserRouter>

@@ -1,0 +1,46 @@
+@import '../../../style/variable.scss';
+
+.menuTopLeft {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  max-width: 40px;
+  min-height: 40px;
+  margin: 10px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+}
+
+.shadowMenu {
+  box-shadow: $ShadowElementMenuTopLeft;
+}
+
+.date {
+  flex: 2;
+  width: 110px;
+  height: 40px;
+  margin: 10px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: $ColorIcon;
+}
+
+.activeIcon {
+  color: $ColorIconClick;
+}

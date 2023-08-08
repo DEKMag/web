@@ -1,0 +1,64 @@
+@import '../../../style/variable.scss';
+
+.menuFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  width: 300px;
+  height: 60px;
+}
+
+.menuIcon {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  max-width: 40px;
+  min-height: 40px;
+  margin: 10px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+}
+
+.shadowMenu {
+  box-shadow: $ShadowElementMenuFooterLeft;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: $ColorIcon;
+}
+
+.activeIcon {
+  color: $ColorIconClick;
+}
+
+@media screen and (max-width: 390px) {
+  .menuFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 185px;
+    height: 60px;
+  }
+  .OneMenu {
+    display: none;
+  }
+  .TwoMenu {
+    display: none;
+  }
+  /* .FreeMenu {
+    display: none;
+  }
+  .FourMenu {
+    display: none;
+  }
+  .FiveMenu {
+    display: none;
+  } */
+}

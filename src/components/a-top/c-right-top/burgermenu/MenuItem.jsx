@@ -1,5 +1,4 @@
-import styles from "./MenuItem.module.css";
-import React from "react";
+import styles from './MenuItem.module.scss';
 
 const MenuItem = ({ label, icon }) => {
   return (

@@ -1,7 +1,6 @@
-import './MenuFooter.module.css';
-import styles from './MenuFooter.module.css';
 import MenuLeftFooter from './a-left-footer/MenuLeftFooter';
 import MenuRightFooter from './c-right-footer/MenuRightFooter';
+import styles from './MenuFooter.module.scss';
 
 const MenuFooter = () => {
   return (

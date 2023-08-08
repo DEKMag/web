@@ -7,7 +7,7 @@ import {
   GiAbstract089,
 } from 'react-icons/gi';
 import { useState } from 'react';
-import styles from './MenuLeftFooter.module.css';
+import styles from './MenuLeftFooter.module.scss';
 
 const MenuLeftFooter = () => {
   const [activeIcon, setActiveIcon] = useState(null);

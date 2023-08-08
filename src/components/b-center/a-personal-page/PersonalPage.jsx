@@ -1,22 +1,12 @@
 import { useState } from 'react';
-import './anime.css';
 import Pagination from '../Pagination';
-import styles from './PersonalPage.module.css';
+import styles from './PersonalPage.module.scss';
 
 const PersonalPage = () => {
   const contentList = [
-    <div className={styles.animeListOne}>
-      <div className={styles.animeContentOne}></div>
-      <div className={styles.animeContentTwo}></div>
-    </div>,
-    <div className={styles.animeListTwo}>
-      <div className={styles.animeContentOne}></div>
-      <div className={styles.animeContentTwo}></div>
-    </div>,
-    <div className={styles.animeListFree}>
-      <div className={styles.animeContentOne}></div>
-      <div className={styles.animeContentTwo}></div>
-    </div>,
+    <div className={styles.animeListOne}></div>,
+    <div className={styles.animeListTwo}></div>,
+    <div className={styles.animeListFree}></div>,
   ];
 
   const itemsPerPage = 1;
@@ -47,12 +37,11 @@ const PersonalPage = () => {
             <div className={styles.topBorder}></div>
             <div className={styles.leftBorder}></div>
             <div className={styles.bottomBorder}></div>
-            <div>
-              {/* Render your current content here */}
+            <>
               {currentContent.map((content, index) => (
                 <div key={index}>{content}</div>
               ))}
-            </div>
+            </>
           </div>
           <div className={styles.bottomPag}>
             <Pagination

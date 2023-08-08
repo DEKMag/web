@@ -1,5 +1,5 @@
-import styles from './MenuLeftFree.module.css';
 import { useState } from 'react';
+import styles from './MenuLeftFree.module.scss';
 
 const MenuLeftFree = () => {
   const [isOpen, setIsOpen] = useState(true);

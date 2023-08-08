@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './MenuRightOne.module.css';
+import styles from './MenuRightOne.module.scss';
 
 const MenuRightOne = ({ activeIcon }) => {
   const [isOpen, setIsOpen] = useState(true);

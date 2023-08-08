@@ -1,16 +1,12 @@
-import styles from './Web.module.css';
 import { useState } from 'react';
 import Pagination from '../Pagination';
-
-// import styles from './PersonalPage.module.css';
+import styles from './Web.module.scss';
 
 const Web = () => {
-  // Replace 'images' with your desired content for pagination
   const contentList = [
     <div className={styles.webSiteOne}>Web 1</div>,
     <div className={styles.webSiteTwo}>Web 2</div>,
     <div className={styles.webSiteFree}>Web 3</div>,
-    // Add more content elements as needed
   ];
 
   const itemsPerPage = 1;
@@ -41,12 +37,11 @@ const Web = () => {
             <div className={styles.topBorder}></div>
             <div className={styles.leftBorder}></div>
             <div className={styles.bottomBorder}></div>
-            <div>
-              {/* Render your current content here */}
+            <>
               {currentContent.map((content, index) => (
                 <div key={index}>{content}</div>
               ))}
-            </div>
+            </>
           </div>
           <div className={styles.bottomPag}>
             <Pagination

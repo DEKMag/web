@@ -1,21 +1,21 @@
 import { useState } from 'react';
 import Pagination from '../Pagination';
-import styles from './Gallery.module.css';
+import styles from './Gallery.module.scss';
 
 const Gallery = () => {
   const images = [
-    'https://static.tildacdn.com/tild3136-6566-4534-b935-636636306331/i.jpg',
-    'https://prv1.lori-images.net/shtorm-na-morskom-poberezhe-0002298233-preview.jpg',
-    'https://prv0.lori-images.net/morskoi-peizazh-priboi-bolshoi-kamen-v-vode-u-berega-0004329620-preview.jpg',
-    'https://prv0.lori-images.net/skalistyi-mrachnyi-bereg-atlanticheskogo-okeana-v-0001400788-preview.jpg',
-    'https://static.tildacdn.com/tild3136-6566-4534-b935-636636306331/i.jpg',
-    'https://prv1.lori-images.net/shtorm-na-morskom-poberezhe-0002298233-preview.jpg',
-    'https://prv0.lori-images.net/morskoi-peizazh-priboi-bolshoi-kamen-v-vode-u-berega-0004329620-preview.jpg',
-    'https://prv0.lori-images.net/skalistyi-mrachnyi-bereg-atlanticheskogo-okeana-v-0001400788-preview.jpg',
-    'https://static.tildacdn.com/tild3136-6566-4534-b935-636636306331/i.jpg',
-    'https://prv1.lori-images.net/shtorm-na-morskom-poberezhe-0002298233-preview.jpg',
-    'https://prv0.lori-images.net/morskoi-peizazh-priboi-bolshoi-kamen-v-vode-u-berega-0004329620-preview.jpg',
-    'https://prv0.lori-images.net/skalistyi-mrachnyi-bereg-atlanticheskogo-okeana-v-0001400788-preview.jpg',
+    'https://images.wallpaperscraft.ru/image/single/les_tuman_derevia_128751_1920x1080.jpg',
+    'https://images.wallpaperscraft.ru/image/single/les_chelovek_odinochestvo_116306_1920x1080.jpg',
+    'https://images.wallpaperscraft.ru/image/single/pejzazh_gory_solntse_140434_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/les_tuman_derevia_126479_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/domik_les_leto_123013_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/holmy_trava_gory_990873_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_derevo_pesok_124955_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/gory_nebo_bali_95497_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/les_tropinka_osen_132571_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/les_tuman_derevia_140541_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/pole_zakat_trava_129566_1280x720.jpg',
+    'https://images.wallpaperscraft.ru/image/single/osen_tuman_derevia_87104_1280x720.jpg',
   ];
 
   const imagesPerPage = 1;
@@ -50,7 +50,12 @@ const Gallery = () => {
             <div className={styles.bottomBorder}></div>
             <div className={styles.imageContent}>
               {currentImages.map((image, index) => (
-                <img key={index} src={image} alt={`Image ${index + 1}`} />
+                <img
+                  className={styles.imgBlock}
+                  key={index}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                />
               ))}
             </div>
           </div>

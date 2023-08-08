@@ -1,0 +1,44 @@
+@import '../../../../style/variable.scss';
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 5px 0px;
+  border-radius: $BorderRadius;
+}
+
+.menuElementOne {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+  vertical-align: middle;
+  color: white;
+  border-radius: $BorderRadius;
+  background-color: $ColorSite;
+}
+
+.menuElementTwo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: $BorderRadius;
+  background-color: $ColorSite;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: antiquewhite;
+}

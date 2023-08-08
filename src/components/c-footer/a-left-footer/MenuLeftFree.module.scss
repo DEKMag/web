@@ -1,0 +1,130 @@
+@import '../../../style/variable.scss';
+
+.logo {
+  width: 100%;
+  height: 815px;
+}
+
+.shell {
+  position: absolute;
+  width: 700px;
+  height: 810px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: $BorderRadius;
+}
+
+.contentCenter {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 760px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+  background: $BackgroundOpacity;
+}
+
+.nameTextContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 20px;
+  color: $ColorText;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 100%;
+    height: 815px;
+  }
+
+  .shell {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 680px;
+    height: 640px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $BorderRadius;
+  }
+
+  .contentCenter {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 680px;
+    height: 590px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+    background: $BackgroundOpacity;
+  }
+
+  .nameTextContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 20px;
+    color: $ColorTextName;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    width: 100%;
+    height: 815px;
+  }
+
+  .shell {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 390px;
+    height: 670px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $BorderRadius;
+  }
+
+  .contentCenter {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 600px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+    background: $BackgroundOpacity;
+  }
+
+  .nameTextContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 20px;
+    color: $ColorTextName;
+  }
+}

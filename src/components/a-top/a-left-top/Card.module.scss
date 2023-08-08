@@ -1,0 +1,951 @@
+@import '../../../style/variable.scss';
+
+.logo {
+  width: 100%;
+  height: 815px;
+}
+
+.shell {
+  position: absolute;
+  width: 700px;
+  height: 810px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: $BorderRadius;
+}
+
+.contentCenter {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 760px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+  background: $BackgroundOpacity;
+}
+
+.nameTextContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 20px;
+  color: $ColorText;
+}
+
+.nameTextContentPhone {
+  display: none;
+}
+
+.contentCenterPhone {
+  display: none;
+}
+
+.contentLeft {
+  width: 345px;
+  height: 750px;
+  margin: 5px 2.5px 5px 5px;
+  border-radius: $BorderRadius;
+}
+
+.leftOne {
+  width: 327px;
+  height: 400px;
+  margin: 5px;
+  background: $ColorSite;
+  background-size: cover;
+  border: solid #5b637e;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.block {
+  box-sizing: border-box;
+  contain: '';
+  position: absolute;
+  width: 327px;
+  height: 400px;
+}
+
+.imgAvatar {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: -40px 0px;
+  background-size: cover;
+}
+
+.leftTwo {
+  width: 333px;
+  height: 150px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.leftFree {
+  width: 333px;
+  height: 180px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.contentRight {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 171px 171px; */
+  width: 350px;
+  height: 750px;
+  margin: 5px 5px 5px 2.5px;
+}
+
+/* HTML START */
+.rightOne {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightHTML {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorHTML 310deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightHTML::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightHTMLvalue {
+  position: relative;
+  color: $ColorHTML;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightHTMLtext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* HTML END */
+
+/* CSS START */
+.rightTwo {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightCSS {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorCSS 290deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightCSS::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightCSSvalue {
+  position: relative;
+  color: $ColorCSS;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightCSStext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* CSS END */
+
+/* JS START */
+.rightFree {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightJS {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorJS 140deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightJS::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightJSvalue {
+  position: relative;
+  color: $ColorJS;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightJStext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* JS END */
+
+/* REACT START */
+.rightFour {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightREACT {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorREACT 200deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightREACT::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightREACTvalue {
+  position: relative;
+  color: $ColorREACT;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightREACTtext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* REACT END */
+
+/* GIT START */
+.rightFive {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: 0$ShadowElement;
+}
+.rightGIT {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorGIT 255deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightGIT::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightGITvalue {
+  position: relative;
+  color: $ColorGIT;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightGITtext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* GIT END */
+
+/* DOCKER START */
+.rightSix {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightDOCKER {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: conic-gradient($ColorDOCKER 60deg, #2f3347 0deg);
+  border-radius: 50%;
+}
+
+.rightDOCKER::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $ColorSite;
+}
+
+.rightDOCKERvalue {
+  position: relative;
+  color: $ColorDOCKER;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.rightDOCKERtext {
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* DOCKER END */
+
+.rightSeven {
+  width: 330px;
+  height: 110px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.rightEight {
+  width: 330px;
+  height: 100px;
+  margin: 5px;
+  background-color: $ColorSite;
+  border-radius: $BorderRadius;
+  box-shadow: $ShadowElement;
+}
+
+.menuContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: absolute;
+  width: 50px;
+  height: 750px;
+  right: 0%;
+  background-color: $ColorSite;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 100%;
+    height: 815px;
+  }
+
+  .shell {
+    position: absolute;
+    width: 700px;
+    height: 610px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $BorderRadius;
+  }
+
+  .contentCenter {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 550px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+    background: $BackgroundOpacity;
+  }
+
+  .contentCenterPhone {
+    display: none;
+  }
+
+  .nameTextContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 20px;
+    color: antiquewhite;
+  }
+
+  .contentLeft {
+    width: 345px;
+    height: 550px;
+    margin: 5px 2.5px 5px 5px;
+    border-radius: $BorderRadius;
+  }
+
+  .leftTwo {
+    width: 333px;
+    height: 125px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .leftFree {
+    display: none;
+  }
+
+  .rightSeven {
+    display: none;
+  }
+
+  .rightEight {
+    display: none;
+  }
+
+  .contentRight {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+    height: 540px;
+    margin: 5px 5px 5px 2.5px;
+  }
+
+  .rightBlock {
+    width: 325px;
+    height: 3px;
+    border-radius: $BorderRadius;
+    background-color: $ColorSite;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    width: 100%;
+    height: 790px;
+  }
+
+  .shell {
+    position: absolute;
+    width: 380px;
+    height: 660px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: $BorderRadius;
+  }
+
+  .contentCenter {
+    display: none;
+  }
+
+  .contentCenterPhone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 600px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+    background: $BackgroundOpacity;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .oneContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nameTextContent {
+    display: none;
+  }
+
+  .nameTextContentPhone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 20px;
+    color: antiquewhite;
+  }
+
+  .contentOnePhone {
+    display: grid;
+    width: 370px;
+    height: 400px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .contentTwoPhone {
+    display: grid;
+    width: 370px;
+    height: 150px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .contentFreePhone {
+    display: grid;
+    width: 370px;
+    height: 150px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .TwoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+
+  /* HTML START */
+  .rightOnePhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .rightHTMLPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorHTML 310deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightHTMLPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightHTMLvaluePhone {
+    position: relative;
+    color: $ColorHTML;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightHTMLtextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* HTML END */
+
+  /* CSS START */
+  .rightTwoPhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .rightCSSPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorCSS 290deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightCSSPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightCSSvaluePhone {
+    position: relative;
+    color: $ColorCSS;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightCSStextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* CSS END */
+
+  /* JS START */
+  .rightFreePhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .rightJSPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorJS 140deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightJSPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightJSvaluePhone {
+    position: relative;
+    color: $ColorJS;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightJStextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* JS END */
+
+  /* REACT START */
+  .rightFourPhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .rightREACTPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorREACT 200deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightREACTPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightREACTvaluePhone {
+    position: relative;
+    color: $ColorREACT;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightREACTtextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* REACT END */
+
+  /* GIT START */
+  .rightFivePhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+  .rightGITPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorGIT 255deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightGITPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightGITvaluePhone {
+    position: relative;
+    color: $ColorGIT;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightGITtextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* GIT END */
+
+  /* DOCKER START */
+  .rightSixPhone {
+    display: grid;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin: 5px;
+    background-color: $ColorSite;
+    border-radius: $BorderRadius;
+    box-shadow: $ShadowElement;
+  }
+
+  .rightDOCKERPhone {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: conic-gradient($ColorDOCKER 60deg, #2f3347 0deg);
+    border-radius: 50%;
+  }
+
+  .rightDOCKERPhone::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $ColorSite;
+  }
+
+  .rightDOCKERvaluePhone {
+    position: relative;
+    color: $ColorDOCKER;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .rightDOCKERtextPhone {
+    position: relative;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* DOCKER END */
+}

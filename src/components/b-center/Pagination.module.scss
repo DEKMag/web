@@ -1,0 +1,13 @@
+.buttonStyles {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  margin: 3px 3px 3px 3px;
+  border: none;
+  border-radius: 3px;
+}

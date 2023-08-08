@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './MenuRightTwo.module.css';
+import styles from './MenuRightTwo.module.scss';
 
 const MenuRightTwo = () => {
   const [isOpen, setIsOpen] = useState(true);
